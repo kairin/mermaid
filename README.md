@@ -5,7 +5,7 @@
 graph TD
     subgraph Data Sources
         A[Email Notifications] -->|New Hire/Rehire| B(Workday System)
-        B -->|Staff Details Report| C(External Spreadsheets)
+        B -->|Staff Details Report| C(Apollo PowerBI)
     end
 
     subgraph Power Automate Flows - Data Ingestion and Conversion
