@@ -29,7 +29,7 @@ graph TD
         PA4 -- Get matching records --> SP3
     end
 
-    subgraph Business Continuity Management (BCM) Trigger
+    subgraph Business Continuity Management Trigger
         BCM_Trigger[BCM Scheduled Check] -->|Initiate Data Review| PA4
     end
 
@@ -70,6 +70,5 @@ graph TD
     style SP4 fill:#bbf,stroke:#333,stroke-width:2px
     style PA5 fill:#9cf,stroke:#333,stroke-width:2px
     style I fill:#ffc,stroke:#333,stroke-width:2px
-
 
 ```
