@@ -1,0 +1,2 @@
+# mermaid
+for mermaid graphs
