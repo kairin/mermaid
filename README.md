@@ -1,13 +1,5 @@
 ```mermaid
-
-\``\`mermaid
-%%{init: {'theme': 'forest'}}%%
-graph TD
-    subgraph Data Sources
-        A[...]
-        ...
-\``\`
-
+%%{init: {'theme': 'neutral'}}%%
 graph TD
     subgraph Data Sources
         A[Email Notifications] -->|New Hire/Rehire| B(Workday System)
@@ -46,6 +38,25 @@ graph TD
         SP4 -- New/Updated Item --> PA5[Send Notification]
         PA5 --> I[HR Team: Email/Teams Alert]
     end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style PA1 fill:#9cf,stroke:#333,stroke-width:2px
+    style PA2 fill:#9cf,stroke:#333,stroke-width:2px
+    style PA3 fill:#9cf,stroke:#333,stroke-width:2px
+    style SP1 fill:#bbf,stroke:#333,stroke-width:2px
+    style SP2 fill:#bbf,stroke:#333,stroke-width:2px
+    style SP3 fill:#bbf,stroke:#333,stroke-width:2px
+    style PA4 fill:#9cf,stroke:#333,stroke-width:2px
+    style D fill:#fc9,stroke:#333,stroke-width:2px
+    style E fill:#fc9,stroke:#333,stroke-width:2px
+    style F fill:#afa,stroke:#333,stroke-width:2px
+    style G fill:#f99,stroke:#333,stroke-width:2px
+    style H fill:#f99,stroke:#333,stroke-width:2px
+    style SP4 fill:#bbf,stroke:#333,stroke-width:2px
+    style PA5 fill:#9cf,stroke:#333,stroke-width:2px
+    style I fill:#ffc,stroke:#333,stroke-width:2px
 
 
 ```
