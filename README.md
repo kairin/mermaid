@@ -45,7 +45,7 @@ graph TD
     end
 
     subgraph Follow-up and Notifications
-        G --> SP4[SP List: Pending Staff Data Review]
+        G --> SP4[Any other CAS Processes]
         H --> SP4
         SP4 -- New/Updated Item --> PA5[Send Notification]
         PA5 --> I[HR Team: Email/Teams Alert]
