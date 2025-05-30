@@ -1,4 +1,13 @@
 ```mermaid
+
+\``\`mermaid
+%%{init: {'theme': 'forest'}}%%
+graph TD
+    subgraph Data Sources
+        A[...]
+        ...
+\``\`
+
 graph TD
     subgraph Data Sources
         A[Email Notifications] -->|New Hire/Rehire| B(Workday System)
