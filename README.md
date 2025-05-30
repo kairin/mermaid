@@ -36,7 +36,7 @@ graph TD
         G --> SP4[SP List: Pending Staff Data Review]
         H --> SP4
         SP4 -- New/Updated Item --> PA5[Send Notification]
-        PA5 --> I[HR Team: Email/Teams Alert]
+        PA5 --> I[END]
     end
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
