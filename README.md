@@ -1,4 +1,6 @@
 ```mermaid
+
+
 %%{init: {'theme': 'neutral'}}%%
 graph TD
     subgraph Data Sources
@@ -23,14 +25,15 @@ graph TD
         JSON3 --> SP3[SP List: External Staff Data]
     end
 
-    subgraph Power Automate Flow - Data Matching and Analysis
-        SP2 -- Iterate each record --> PA4[Match Data Flow]
-        PA4 -- Get matching records --> SP1
-        PA4 -- Get matching records --> SP3
+    subgraph Business Continuity Management Trigger
+        BCM_Trigger[BCM Scheduled Check] -->|Initiate Data Review| PA4_Start
     end
 
-    subgraph Business Continuity Management Trigger
-        BCM_Trigger[BCM Scheduled Check] -->|Initiate Data Review| PA4
+    subgraph Power Automate Flow - Data Matching and Analysis
+        PA4_Start((Start Matching Flow)) --> PA4[Match Data Flow]
+        PA4 -->|Get records from| SP2
+        PA4 -->|Get records from| SP1
+        PA4 -->|Get records from| SP3
     end
 
     subgraph Matching Logic
@@ -61,6 +64,7 @@ graph TD
     style SP2 fill:#bbf,stroke:#333,stroke-width:2px
     style SP3 fill:#bbf,stroke:#333,stroke-width:2px
     style PA4 fill:#9cf,stroke:#333,stroke-width:2px
+    style PA4_Start fill:#ccf,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
     style BCM_Trigger fill:#ccf,stroke:#333,stroke-width:2px
     style D fill:#fc9,stroke:#333,stroke-width:2px
     style E fill:#fc9,stroke:#333,stroke-width:2px
@@ -70,5 +74,6 @@ graph TD
     style SP4 fill:#bbf,stroke:#333,stroke-width:2px
     style PA5 fill:#9cf,stroke:#333,stroke-width:2px
     style I fill:#ffc,stroke:#333,stroke-width:2px
+
 
 ```
