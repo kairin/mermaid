@@ -47,8 +47,8 @@ graph TD
     subgraph Follow-up and Notifications
         G --> SP4[Any other CAS Processes]
         H --> SP4
-        SP4 -- New/Updated Item --> PA5[Send Notification]
-        PA5 --> I[HR Team: Email/Teams Alert]
+        SP4 -- BCM Update processes --> PA5[Send Notification to DOSes for approval? else send to Kairin for Review]
+        PA5 --> I[END]
     end
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
