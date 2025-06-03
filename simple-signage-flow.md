@@ -7,6 +7,7 @@ graph LR
     Title 
     A(simple-signage-solution <b>Start Here</b>)
     A --> B
+    Z[If power outage due to CDE restart power to whole college, manually restart required]
 
     subgraph Dockerised VPN Flow Prerequisite Steps
         B[Log into ITE VPN]:::vpnstep --> C[simple-signage needs to download new posters from Sharepoint Server]:::vpnstep
