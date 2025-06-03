@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Start] --> B(Log into VPN);
     B --> C(Log into Another Server);
@@ -7,3 +8,4 @@ graph TD
     F --> G[End];
     D -- No --> H(Access Denied: VPN not detected);
     H --> C; // Optional: Loop back to try logging into server again or to VPN
+```
