@@ -3,7 +3,7 @@
 ```mermaid
 
     graph LR
-    Title["<b>IPtel Admin Dockerised Flow</b>"]:::title
+    Title["<b>Dockerised Flow</b>"]:::title
     Title 
     A(IPtel Admins Start Here)
     A --> B
