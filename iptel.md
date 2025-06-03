@@ -7,5 +7,6 @@ graph TD
     E --> F(Assign IP Phone Numbers);
     F --> G[End];
     D -- No --> H(Access Denied: VPN not detected);
-    H --> C; // Optional: Loop back to try logging into server again or to VPN
+    H --> C;
+// Optional: Loop back to try logging into server again or to VPN
 ```
