@@ -5,6 +5,6 @@
 currently use mermaid to view the prettier version.
 
 this location will only keep the simplified flowchart, which more often then not is good enough. 
-'#end-users-issue'.
+`#end-users-issue`.
 
 note: mermaid only allow for 3 pretty charts within the free plan.
