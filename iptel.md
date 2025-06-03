@@ -4,15 +4,16 @@ graph LR
     A(Start for IPtel Admins)
     A --> B
 
-    subgraph Docker Container Flow
+    subgraph IPtel Admin Dockerised Flow
         subgraph Dockerised VPN Flow Prerequisite Steps
-            B[Log into VPN]:::vpnstep --> C[Log into Another Server]:::vpnstep
+            B[Log into ITE VPN]:::vpnstep --> C[Log into DOHUB Server]:::vpnstep
             C --> D{Server verifies VPN}:::vpnstep
+
+            D -- No --> H[Access Denied: VPN not detected]
+
         end
         D -- Yes --> E[Access IPtel Dashboard]
         E --> F[Assign IP Phone Numbers]
-        
-        D -- No --> H[Access Denied: VPN not detected]
         H --> B
     end
         F --> G(End)
@@ -23,5 +24,6 @@ graph LR
     style H fill:#fcc,stroke:#333,stroke-width:2px
     style A fill:#fff,stroke:#333,stroke-width:2px
     style G fill:#fff,stroke:#333,stroke-width:2px
+
 
 ```
