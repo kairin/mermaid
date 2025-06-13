@@ -10,7 +10,7 @@ graph TD
     H --> I[Return Any Unused Toner to Kairin SIMO]
     L -- Yes --> M[Request Supplier to Deliver New Toner]
     L -- No --> J[No Action Needed]
-    J --> K
+    J --> K[End – Reminder any disposal pass to CAS Kairin]
     I --> K
     M --> K
 ```
