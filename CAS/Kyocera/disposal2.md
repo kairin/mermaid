@@ -7,7 +7,7 @@ graph TD
     D --> E[Place Waste Toner in Plastic Bag]
     B -- No --> L{Is Waste Toner Below 25%?}
     L -- Yes --> M[Request Supplier to Deliver New Toner]
-    M --> K[End – Reminder: any disposal pass to CAS Kairin]
+    M --> K[End – Return to CAS Kairin]
     L -- No --> J[No Action Needed]
     J --> K
     E -- Waste Toner Full --> G[Return to CAS Kairin]
