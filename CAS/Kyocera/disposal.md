@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[New Toner Issued for W7F3601570] --> B{Is Device Black Toner 0%}
     B -- Yes --> C[Replace with New Toner]
@@ -14,3 +15,4 @@ graph TD
     J --> K
     I --> K
     M --> K
+```
