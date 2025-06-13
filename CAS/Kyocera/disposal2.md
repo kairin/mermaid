@@ -18,6 +18,7 @@ graph TD
     %% Subgraphs for visual grouping, optional
     subgraph "Reference to W7F3601570"
         A
+        B
     end
     subgraph "For Full Waste Toner"
         E
