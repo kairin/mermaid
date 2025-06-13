@@ -1,8 +1,10 @@
 ```mermaid
 graph TD
-    A[New Toner Issued for W7F3601570] --> B{Is Device Black Toner 0%}
+subgraph Box Reference to W7F3601570
+    A[New Toner Issued] --> B{Is Device Black Toner 0%}
     B -- Yes --> C[Replace with New Toner]
     B -- No --> L{Is Waste Toner Below 25%}
+end
     C --> D[Empty Black Toner Cartridge = Waste Toner]
     D --> E[Place Waste Toner in Plastic Bag]
     E -- Waste Toner Full --> G[Return Full Waste Toner to Kairin SIMO]
