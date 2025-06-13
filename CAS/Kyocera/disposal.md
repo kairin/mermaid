@@ -8,8 +8,8 @@ end
     C --> D[Empty Black Toner Cartridge = Waste Toner]
     D --> E[Place Waste Toner in Plastic Bag]
 subgraph For Full Waste Toner
-    E -- Waste Toner Full --> G[Return CAS Kairin]
-    G --> H[No Disposal Required at School]
+    E -- Waste Toner Full --> G[Return to CAS Kairin]
+    G --> H[CAS will Dispose]
     H --> I[Return Any Unused Toner]
 end
     L -- Yes --> M[Request Supplier to Deliver New Toner]
