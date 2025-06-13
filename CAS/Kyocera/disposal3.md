@@ -1,3 +1,5 @@
+```mermaid
+
 graph TD
     A[New Toner Issued] --> B{Is Device Black Toner 0%?}
     B -- Yes --> C[Replace with New Toner]
@@ -60,3 +62,4 @@ graph TD
     class D,E process
     class G,H disposal
     class K endNode
+```
