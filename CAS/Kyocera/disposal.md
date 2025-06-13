@@ -1,6 +1,5 @@
 ```mermaid
-graph TD
-subgraph Reference to W7F3601570
+subgraph Toner requested for W7F3601570
     A[New Toner Issued] --> B{Is Device Black Toner 0%}
     B -- Yes --> C[Replace with New Toner]
     B -- No --> L{Is Waste Toner Below 25%}
