@@ -5,7 +5,7 @@ graph TD
     B -- Yes --> C[Replace with New Toner]
     C --> D[Empty Black Toner Cartridge = Waste Toner]
     D --> E[Place Waste Toner in Plastic Bag]
-    B -- No --> L{Is Waste Toner Below 25%?}
+    B -- No --> L{Is Device Toner Below 25%?}
     L -- Yes --> M[Request Supplier to Deliver New Toner]
     M --> K[End – Return to CAS Kairin]
     L -- No --> J[No Action Needed]
