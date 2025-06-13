@@ -7,7 +7,7 @@ subgraph Reference to W7F3601570
 end
     C --> D[Empty Black Toner Cartridge = Waste Toner]
     D --> E[Place Waste Toner in Plastic Bag]
-subgraph Reference to Full Waste Toner
+subgraph For Full Waste Toner
     E -- Waste Toner Full --> G[Return CAS Kairin]
     G --> H[No Disposal Required at School]
     H --> I[Return Any Unused Toner]
