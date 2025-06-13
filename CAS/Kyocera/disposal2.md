@@ -15,7 +15,6 @@ graph TD
     H --> I[Return Any Unused Toner]
     I --> K
 
-    %% Subgraphs for visual grouping, optional
     subgraph "Reference to W7F3601570"
         A
         B
@@ -27,12 +26,12 @@ graph TD
         I
     end
 
-    %% Class Definitions for Styling
-    classDef important fill:#FFD700,stroke:#B8860B,stroke-width:2px
-    classDef decision fill:#ADD8E6,stroke:#4682B4,stroke-width:2px
-    classDef process fill:#D3F3EE,stroke:#66CDAA,stroke-width:2px
-    classDef disposal fill:#FFC0CB,stroke:#FF69B4,stroke-width:2px
-    classDef endNode fill:#DCDCDC,stroke:#808080,stroke-width:2px
+    %% Improved Class Definitions for Styling
+    classDef important fill:#FFD700,stroke:#B8860B,stroke-width:2px,color:#222
+    classDef decision fill:#4682B4,stroke:#274472,stroke-width:2px,color:#fff
+    classDef process fill:#30bfa3,stroke:#17806D,stroke-width:2px,color:#fff
+    classDef disposal fill:#FF69B4,stroke:#B22267,stroke-width:2px,color:#fff
+    classDef endNode fill:#888888,stroke:#444444,stroke-width:2px,color:#fff
 
     %% Applying Classes to Nodes
     class A,C,M important
@@ -40,4 +39,5 @@ graph TD
     class D,E process
     class G,H disposal
     class K endNode
+
 ```
